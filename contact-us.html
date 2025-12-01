@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact 7EVEN Cosmetics – We’re here to help with any questions about our luxury monochrome products." />
+  <title>Contact Us – 7EVEN COSMETICS</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Custom CSS (same as index) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black antialiased">
+
+  <!-- Header (same as homepage) -->
+  <div w3-include-html="header.html"></div>
+
+  <!-- CONTACT HERO -->
+  <section class="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
+    <div class="absolute inset accuracy-0 bg-black/50"></div>
+    <img src="https://picsum.photos/1920/1080?grayscale&random=99" class="absolute inset-0 w-full h-full object-cover" alt="Contact Background">
+    
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="text-6xl md:text-8xl font-bold tracking-tight">GET IN TOUCH</h1>
+      <p class="text-xl md:text-2xl mt-6 opacity-90 tracking-widest">WE WOULD LOVE TO HEAR FROM YOU</p>
+    </div>
+  </section>
+
+ <!-- CONTACT INFO + FORM -->
+<section class="py-20 md:py-32 border-b border-black">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+    
+    <!-- Left: Contact Details -->
+    <div class="space-y-12">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold mb-8">LET'S TALK</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Whether you have a question about our products, need help with an order, or just want to say hello — 
+          our team is here for you.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Email -->
+        <div class="flex items-start gap-6">
+          <div class="p-4 border border-black rounded-full">
+            <i data-feather="mail" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl">Email Us</h3>
+            <p class="text-gray-600 mt-1">hello@7evencosmetics.com</p>
+            <p class="text-sm text-gray-500">We reply within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Live Chat → WhatsApp -->
+        <div class="flex items-start gap-6">
+          <div class="p-4 border border-black rounded-full">
+            <i data-feather="message-circle" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl">Chat on WhatsApp</h3>
+            <a href="https://wa.me/919876543210" target="_blank" class="text-gray-600 mt-1 hover:text-black transition font-medium">
+              +91 98765 43210
+            </a>
+            <p class="text-sm text-gray-500">Available Mon–Sat, 10AM–7PM IST</p>
+          </div>
+        </div>
+
+        <!-- Phone Number (Visit Us replaced) -->
+        <div class="flex items-start gap-6">
+          <div class="p-4 border border-black rounded-full">
+            <i data-feather="phone" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl">Call Us</h3>
+            <a href="tel:+919876543210" class="text-gray-600 mt-1 hover:text-black transition font-medium">
+              +91 98765 43210
+            </a>
+            <p class="text-sm text-gray-500">Mon–Sat, 10AM–7PM IST</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8">
+        <h3 class="font-semibold text-xl mb-4">Follow Us</h3>
+        <div class="flex gap-6">
+          <a href="https://www.instagram.com/7even_cosmetics/?hl=en" class="hover:text-gray-600"><i data-feather="instagram" class="w-7 h-7"></i></a>
+          <a href="#" class="hover:text-gray-600"><i data-feather="twitter" class="w-7 h-7"></i></a>
+          <a href="https://www.youtube.com/@7Evencosmetics" class="hover:text-gray-600"><i data-feather="youtube" class="w-7 h-7"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form (bilkul same as before) -->
+    <div class="bg-gray-50 border border-black p-8 md:p-12">
+      <h3 class="text-3xl font-bold mb-8">SEND US A MESSAGE</h3>
+      
+      <form id="contactForm" class="space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <label class="block font-semibold mb-2">First Name</label>
+            <input type="text" required class="w-full px-4 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black transition">
+          </div>
+          <div>
+            <label class="block font-semibold mb-2">Last Name</label>
+            <input type="text" required class="w-full px-4 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black transition">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold mb-2">Email Address</label>
+          <input type="email" required class="w-full px-4 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black transition">
+        </div>
+
+        <div>
+          <label class="block font-semibold mb-2">Subject</label>
+          <select required class="w-full px-4 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black transition">
+            <option value="">Choose one...</option>
+            <option>Order Inquiry</option>
+            <option>Product Question</option>
+            <option>Wholesale / Stockist</option>
+            <option>Press & Collaboration</option>
+            <option>Feedback</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-semibold mb-2">Your Message</label>
+          <textarea rows="6" required class="w-full px-4 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black transition resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-black text-white py-4 font-bold text-lg hover:bg-gray-800 transition">
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ / QUICK ANSWERS -->
+  <section class="py-20 bg-gray-50 border-b border-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">FREQUENTLY ASKED</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div>
+          <h3 class="font-semibold text-xl mb-3">Shipping & Delivery</h3>
+          <p class="text-gray-700">Free express shipping on all orders above ₹5,000. Delivery within 2–5 business days across India.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-3">Returns</h3>
+          <p class="text-gray-700">30-day return policy. Unused products in original packaging qualify for a full refund.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-3">Ingredients & Safety</h3>
+          <p class="text-gray-700">All products are 100% vegan, cruelty-free, paraben-free, and dermatologically tested.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-3">International Orders</h3>
+          <p class="text-gray-700">We currently ship only within India. International shipping coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div w3-include-html="footer.html"></div>
+
+  <!-- Script (same reusable script) -->
+  <script src="script.js"></script>
+
+  
+</body>
+</html>

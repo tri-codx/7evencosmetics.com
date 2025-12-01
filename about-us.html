@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — 7EVEN Cosmetics</title>
+  <meta name="description" content="7EVEN blends New Zealand skincare science with India’s beauty heritage. Clean, inclusive, high-performance cosmetics crafted for Indian skin.">
+  
+  <!-- Fonts: Poppins + Playfair Display (headings ke liye zaroori) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Custom CSS (folder structure ke hisaab se) -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Playfair Display headings ke liye */
+    .playfair {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+  <!-- Header Load -->
+  <div w3-include-html="header.html"></div>
+
+  <!-- HERO BANNER -->
+  <section class="relative h-screen bg-black flex items-center justify-center overflow-hidden">
+    <img src="https://picsum.photos/1920/1080?grayscale&blur=3&random=777" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="About 7EVEN">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30"></div>
+    <div class="relative text-center text-white px-8 z-10">
+      <h1 class="playfair text-7xl md:text-9xl font-bold leading-tight">ABOUT US</h1>
+      <p class="text-2xl md:text-4xl mt-6 tracking-widest opacity-90">Beauty Beyond Shades!!!</p>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="py-24 border-b-2 border-black bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div class="space-y-8 text-lg leading-relaxed">
+        <h2 class="playfair text-5xl md:text-6xl font-bold">Our Story</h2>
+        <p>
+          7even is an International beauty brand that blends <strong>New Zealand’s advanced skincare science</strong> with <strong>India’s rich beauty heritage</strong>.
+        </p>
+        <p>
+          Our products are specially formulated for Indian skin tones and climate, delivering high performance with the goodness of natural and botanical ingredients.
+        </p>
+        <p>
+          At 7even Cosmetics, we focus on innovation, inclusivity, and quality. Our makeup range — from foundations to lipsticks — is gentle on the skin, long-lasting, and crafted to enhance natural beauty while solving common Indian skin concerns such as pigmentation, oiliness, and pollution sensitivity.
+        </p>
+        <p>
+          By combining New Zealand formulations with India’s strong manufacturing expertise, 7even is committed to creating clean, effective, and sustainable beauty products.
+        </p>
+        <p class="text-xl font-medium italic">
+          Just like the seven colors of the rainbow, our range represents purity, inclusivity, and the celebration of individuality — reflecting the vibrant spectrum of real Indian beauty.
+        </p>
+      </div>
+      <div>
+        <img src="img/ab.jpeg" class="w-full border-8 border-black shadow-2xl" alt="7EVEN Philosophy">
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="py-24 bg-gray-50 border-b-2 border-black">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div class="bg-white p-12 border-2 border-black shadow-xl">
+        <h3 class="playfair text-5xl font-bold mb-8">Mission</h3>
+        <p class="text-lg leading-relaxed">
+          Our mission is to deliver high-performance, skin-friendly beauty products crafted with natural and botanical ingredients. We aim to solve common Indian skin concerns, celebrate diversity, and promote self-expression through innovative formulations, sustainable practices, and world-class manufacturing.
+        </p>
+        <p class="mt-6 font-medium">
+          By combining global innovation with local relevance, we strive to offer beauty solutions that truly work for every Indian consumer.
+        </p>
+      </div>
+
+      <div class="bg-white p-12 border-2 border-black shadow-xl">
+        <h3 class="playfair text-5xl font-bold mb-8">Vision</h3>
+        <p class="text-lg leading-relaxed">
+          To become <span class="font-bold">India’s most trusted beauty brand</span> by blending New Zealand’s advanced skincare science with India’s diverse beauty needs — creating clean, effective, and inclusive cosmetics that empower every individual to embrace their natural beauty.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE SECTION -->
+  <section class="py-32 bg-black text-white text-center">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="playfair text-7xl md:text-9xl font-bold leading-none">
+        Beauty Beyond Shades!!!
+      </h2>
+      <p class="mt-8 text-2xl md:text-3xl tracking-widest opacity-80">
+        Celebrating the spectrum of real Indian beauty
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer Load -->
+  <div w3-include-html="footer.html"></div>
+
+  <!-- Reusable Script (js folder se) -->
+  <script src="script.js"></script>
+</body>
+</html>

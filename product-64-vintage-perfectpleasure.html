@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="7EVEN My Color n My Shade Rich Satin Vintage Lipstick – Shade 64 Perfect Pleasure" />
+  <title>Shade 64 Perfect Pleasure – 7EVEN COSMETICS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black antialiased">
+  <div w3-include-html="header.html"></div>
+
+  <div class="pt-20 md:pt-24 lg:pt-5">
+    <section class="py-12 md:py-20 border-b border-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- MAIN GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          <!-- LEFT COLUMN: Image + Product Information (Desktop only) -->
+          <div class="space-y-12 lg:space-y-20">
+            <!-- Image Gallery -->
+            <div>
+              <div class="w-full aspect-square border-4 border-black overflow-hidden bg-gray-100 mb-6">
+                <img id="mainImage" src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-1.jpeg" alt="7EVEN Vintage Lipstick Shade 64 Perfect Pleasure" class="w-full h-full object-cover">
+              </div>
+              <div class="grid grid-cols-5 gap-3">
+                <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-1.jpeg" alt="View 1" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-2.png" alt="View 2" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-3.png" alt="View 3" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-4.png" alt="Swatch" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-5.jpeg" alt="On Lips" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+              </div>
+            </div>
+
+            <!-- PRODUCT INFORMATION - Desktop Only -->
+            <div class="hidden lg:block space-y-6">
+              <h2 class="text-3xl md:text-4xl font-bold mb-8">PRODUCT INFORMATION</h2>
+
+              <!-- Description -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+                  Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+                </button>
+                <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+                  <p class="mb-6">
+                    My Color n My Shade Rich Cream Matte Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a Rich cream Matte finish. This lipstick, infused with vitamin E, moisturises your lips while giving a full blast of colour that lasts for up to 10 hours. This Rich-cream Matte lipstick glides on smoothly and effectively conceals uneven lips. Available in 12 beautiful hues to complement any colour of skin.
+                  </p>
+                  <ul class="space-y-3">
+                    <li>• This lightweight lipstick provides a Cream Matte touch to your</li>
+                    <li>• Stays in place for up to ten hours</li>
+                    <li>• It is very pigmented, creamy, contains vitamin E</li>
+                    <li>• Vegan and cruelty-free.</li>
+                    <li>• Without parabens</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Benefits -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl benefitBtn">
+                  Benefits <i data-feather="chevron-down" class="w-6 h-6 transition-transform benefitIcon"></i>
+                </button>
+                <div class="benefitContent px-8 pb-8 hidden text-gray-700">
+                  <ul class="space-y-3">
+                    <li>• Rich cream matte finish with full coverage</li>
+                    <li>• Up to 10 hours long stay</li>
+                    <li>• Highly pigmented & creamy texture</li>
+                    <li>• Infused with Vitamin E for moisturised lips</li>
+                    <li>• Conceals uneven lip tone</li>
+                    <li>• Vegan • Cruelty-Free • Paraben-Free</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Ingredients -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl ingBtn">
+                  Ingredients <i data-feather="chevron-down" class="w-6 h-6 transition-transform ingIcon"></i>
+                </button>
+                <div class="ingContent px-8 pb-8 hidden text-gray-700 text-sm leading-relaxed">
+                  Butylated hydroxytoluene, Tocopherol acetate, Pigment/pearl, Silica, Carnauba Wax, Candelilla Wax, Ozokerite Wax, Castor Oil, Ceresin Wax, Caprylic Capric Triglyceride, Octyl Palmitate, Olive Oil, PVP/hexadecane copolymer, Perfume, Vitamin E
+                </div>
+              </div>
+
+              <!-- How to Use -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl howBtn">
+                  How to Use <i data-feather="chevron-down" class="w-6 h-6 transition-transform howIcon"></i>
+                </button>
+                <div class="howContent px-8 pb-8 hidden text-gray-700">
+                  <ol class="list-decimal list-inside space-y-3">
+                    <li>Apply 7even Sensual Lips lipstick in the centre of your upper lip and follow the contours of your mouth.</li>
+                    <li>Follow the contours of your lips carefully</li>
+                    <li>Glide the lipstick across the entire bottom lip for a flawless finish.</li>
+                    <li>Now Ready to Flaunt</li>
+                  </ol>
+                </div>
+              </div>
+
+              <!-- Additional Information -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl addBtn">
+                  Additional Information <i data-feather="chevron-down" class="w-6 h-6 transition-transform addIcon"></i>
+                </button>
+                <div class="addContent px-8 pb-8 hidden text-gray-700 text-sm space-y-2">
+                  <p><strong>Weight:</strong> 4.8gm</p>
+                  <p><strong>Company Name:</strong> 7even Cosmetics</p>
+                  <p><strong>Company Address:</strong> Level 1, 6 Johnsonville Road, Wellington, New Zealand</p>
+                  <p><strong>Country Of Origin:</strong> India</p>
+                  <p><strong>Marketed & Imported by:</strong> Botonika Lifestyles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN / MOBILE -->
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-3xl md:text-3xl leading-tight">
+                My Color n My Shade Rich Satin Vintage Lipstick
+              </h1>
+              <p class="text-xl md:text-2xl mt-2 text-gray-700 font-medium">
+                Shade 64 Perfect Pleasure • Rosy Mauve • 4.8g
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="flex text-yellow-500 text-lg">★★★★★</div>
+              <span class="font-bold">5.0 out of 5 stars</span>
+              <span class="text-gray-600">| New Launch</span>
+            </div>
+            <div class="text-4xl md:text-5xl font-bold">₹499</div>
+            <div class="text-sm md:text-base space-y-3 text-gray-700 border-b border-gray-300 pb-6">
+              <p>My Color n My Shade Rich Cream Matte Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a Rich cream Matte finish. This lipstick, infused with vitamin E, moisturises your lips while giving a full blast of colour that lasts for up to 10 hours. This Rich-cream Matte lipstick glides on smoothly and effectively conceals uneven lips.</p>
+            </div>
+            <div class="space-y-4">
+              <button class="w-full bg-black text-white py-4 text-lg font-bold hover:bg-gray-800 transition">
+                ADD TO CART
+              </button>
+              <button class="w-full border-2 border-black py-4 text-lg font-bold hover:bg-black hover:text-white transition">
+                BUY NOW
+              </button>
+            </div>
+            <div class="text-sm space-y-2">
+              <div class="flex justify-between"><span class="font-medium">Brand</span><span>7EVEN</span></div>
+              <div class="flex justify-between"><span class="font-medium">Colour</span><span>Rosy Mauve</span></div>
+              <div class="flex justify-between"><span class="font-medium">Size</span><span>4.8g (Pack of 1)</span></div>
+              <div class="flex justify-between"><span class="font-medium">Finish Type</span><span>Matte</span></div>
+              <div class="flex justify-between"><span class="font-medium">Product Benefits</span><span>Moisturising, Pigmented</span></div>
+              <div class="flex justify-between"><span class="font-medium">Speciality</span><span>Paraben Free</span></div>
+              <div class="flex justify-between"><span class="font-medium">Item Form</span><span>Cream</span></div>
+              <div class="flex justify-between"><span class="font-medium">Skin Tone</span><span>All</span></div>
+              <div class="flex justify-between"><span class="font-medium">Item Weight</span><span>4.8 Grams</span></div>
+            </div>
+            <div class="text-center text-sm text-gray-600 space-y-1 pt-8 border-t border-gray-300">
+              <p>Secure transaction • Returns Policy • Free Shipping Across India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOBILE ONLY PRODUCT INFORMATION (exact same as desktop) -->
+        <div class="mt-16 lg:hidden space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8">PRODUCT INFORMATION</h2>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+              Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+            </button>
+            <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+              <p class="mb-6">
+                My Color n My Shade Rich Cream Matte Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a Rich cream Matte finish. This lipstick, infused with vitamin E, moisturises your lips while giving a full blast of colour that lasts for up to 10 hours. This Rich-cream Matte lipstick glides on smoothly and effectively conceals uneven lips. Available in 12 beautiful hues to complement any colour of skin.
+              </p>
+              <ul class="space-y-3">
+                <li>• This lightweight lipstick provides a Cream Matte touch to your</li>
+                <li>• Stays in place for up to ten hours</li>
+                <li>• It is very pigmented, creamy, contains vitamin E</li>
+                <li>• Vegan and cruelty-free.</li>
+                <li>• Without parabens</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl benefitBtn">
+              Benefits <i data-feather="chevron-down" class="w-6 h-6 transition-transform benefitIcon"></i>
+            </button>
+            <div class="benefitContent px-8 pb-8 hidden text-gray-700">
+              <ul class="space-y-3">
+                <li>• Rich cream matte finish with full coverage</li>
+                <li>• Up to 10 hours long stay</li>
+                <li>• Highly pigmented & creamy texture</li>
+                <li>• Infused with Vitamin E for moisturised lips</li>
+                <li>• Conceals uneven lip tone</li>
+                <li>• Vegan • Cruelty-Free • Paraben-Free</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl ingBtn">
+              Ingredients <i data-feather="chevron-down" class="w-6 h-6 transition-transform ingIcon"></i>
+            </button>
+            <div class="ingContent px-8 pb-8 hidden text-gray-700 text-sm leading-relaxed">
+              Butylated hydroxytoluene, Tocopherol acetate, Pigment/pearl, Silica, Carnauba Wax, Candelilla Wax, Ozokerite Wax, Castor Oil, Ceresin Wax, Caprylic Capric Triglyceride, Octyl Palmitate, Olive Oil, PVP/hexadecane copolymer, Perfume, Vitamin E
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl howBtn">
+              How to Use <i data-feather="chevron-down" class="w-6 h-6 transition-transform howIcon"></i>
+            </button>
+            <div class="howContent px-8 pb-8 hidden text-gray-700">
+              <ol class="list-decimal list-inside space-y-3">
+                <li>Apply 7even Sensual Lips lipstick in the centre of your upper lip and follow the contours of your mouth.</li>
+                <li>Follow the contours of your lips carefully</li>
+                <li>Glide the lipstick across the entire bottom lip for a flawless finish.</li>
+                <li>Now Ready to Flaunt</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl addBtn">
+              Additional Information <i data-feather="chevron-down" class="w-6 h-6 transition-transform addIcon"></i>
+            </button>
+            <div class="addContent px-8 pb-8 hidden text-gray-700 text-sm space-y-2">
+              <p><strong>Weight:</strong> 4.8gm</p>
+              <p><strong>Company Name:</strong> 7even Cosmetics</p>
+              <p><strong>Company Address:</strong> Level 1, 6 Johnsonville Road, Wellington, New Zealand</p>
+              <p><strong>Country Of Origin:</strong> India</p>
+              <p><strong>Marketed & Imported by:</strong> Botonika Lifestyles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

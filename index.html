@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="7even Cosmetics — Luxury monochrome skincare, makeup, and fragrance. Minimal design, maximum performance." />
+  <title>7EVENCOSMETICS.COM — Luxury Monochrome Cosmetics</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black antialiased">
+
+  <!-- Header Load -->
+  <div w3-include-html="header.html"></div>
+
+  <!-- HERO SLIDER -->
+  <section id="home" class="relative h-screen w-full overflow-hidden bg-black">
+    <div class="slideshow">
+      <!-- Slide 1 -->
+      <input type="radio" name="slide" id="s1" class="slide-radio" checked hidden>
+      <label for="s1" class="slide">
+        <img src="img/carousel/carousel-1.jpg" class="w-full h-full object-cover" alt="7EVEN">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="content">
+          <h1 class="title">7EVEN</h1>
+          <p class="subtitle">LUXURY MONOCHROME COSMETICS</p>
+          <a href="#shop" class="btn">ENTER</a>
+        </div>
+      </label>
+
+      <!-- Slide 2 -->
+      <input type="radio" name="slide" id="s2" class="slide-radio" hidden>
+      <label for="s2" class="slide">
+        <img src="img/carousel/carousel-2.jpg" class="w-full h-full object-cover" alt="NOIR">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="content">
+          <h1 class="title">NOIR</h1>
+          <p class="subtitle">Signature Unisex Fragrance • ₹7,200</p>
+          <a href="#shop" class="btn bg-white text-black hover:bg-gray-200">DISCOVER</a>
+        </div>
+      </label>
+
+      <!-- Slide 3 -->
+      <input type="radio" name="slide" id="s3" class="slide-radio" hidden>
+      <label for="s3" class="slide">
+        <img src="img/carousel/carousel-3.jpg" class="w-full h-full object-cover" alt="Flawless">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="content">
+          <h1 class="title">GLAZE</h1>
+          <p class="subtitle">Minimalist Foundation • ₹3,500</p>
+          <a href="#shop" class="btn">SHOP NOW</a>
+        </div>
+      </label>
+
+      <!-- Slide 4 -->
+      <input type="radio" name="slide" id="s4" class="slide-radio" hidden>
+      <label for="s4" class="slide">
+        <img src="https://picsum.photos/1920/1080?grayscale&random=44" class="w-full h-full object-cover" alt="Ritual">
+        <div class="absolute inset-0 bg-black/65"></div>
+        <div class="content">
+          <h1 class="title">THE RITUAL</h1>
+          <p class="subtitle">Cleanse • Hydrate • Perfect • Scent</p>
+          <a href="#collections" class="btn bg-white text-black hover:bg-gray-300">EXPLORE COLLECTION</a>
+        </div>
+      </label>
+
+      <!-- Dots -->
+      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-20">
+        <label for="s1" class="dot"></label>
+        <label for="s2" class="dot"></label>
+        <label for="s3" class="dot"></label>
+        <label for="s4" class="dot"></label>
+      </div>
+    </div>
+  </section>
+
+ <!-- OUR COLLECTIONS -->
+<section id="collections" class="py-20 border-b border-black bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14 tracking-wider">OUR COLLECTIONS</h2>
+
+    <!-- Mobile: 2 per row | Desktop: 4 -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- 1. LIP CARE -->
+      <a href="lipoil&gloss.html" class="group text-center">
+        <div class="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 border-black shadow-lg group-hover:shadow-2xl transition-all duration-300">
+          <img src="img/lip-care.jpeg" 
+               alt="Lip Care" 
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <p class="mt-5 text-lg font-bold tracking-wider">LIP CARE</p>
+      </a>
+
+      <!-- 2. EYE CARE -->
+      <a href="comming-soon.html" class="group text-center">
+        <div class="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 border-black shadow-lg group-hover:shadow-2xl transition-all duration-300">
+          <img src="img/eye-care.jpeg" 
+               alt="Eye Care" 
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <p class="mt-5 text-lg font-bold tracking-wider">EYE CARE</p>
+      </a>
+
+      <!-- 3. COMBO SETS -->
+      <a href="combos-kits.html" class="group text-center">
+        <div class="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 border-black shadow-lg group-hover:shadow-2xl transition-all duration-300">
+          <img src="img/combo-kit.jpeg" 
+               alt="Combo Sets" 
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <p class="mt-5 text-lg font-bold tracking-wider">COMBO SETS</p>
+      </a>
+
+      <!-- 4. FACE CARE -->
+      <a href="comming-soon.html" class="group text-center">
+        <div class="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full overflow-hidden border-2 border-black shadow-lg group-hover:shadow-2xl transition-all duration-300">
+          <img src="img/face-care.jpg" 
+               alt="Face Care" 
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <p class="mt-5 text-lg font-bold tracking-wider">FACE CARE</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRENDING -->
+<section id="shop" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14 tracking-wider">TRENDING</h2>
+
+    <!-- Mobile: 2 per row | Desktop: 4 -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
+
+      <!-- Product 1 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <!-- Ribbon -->
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">NEW LAUNCH</span>
+        </div>
+
+        <!-- Image with padding -->
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/lipoil&gloss/product-02-lipoil&gloss-hazelnut/lipoil&gloss-02-hazelnut-1.jpg"
+                 alt="Sparkle Lip Glaze - 02 Hazelnut"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Sparkle Lip Glaze - 02 Hazelnut</h3>
+          <p class="text-xs text-gray-600 mt-1">High Shine • Non-Sticky</p>
+          
+          <!-- Rating -->
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.9</span>
+          </div>
+
+          <!-- Price + Button -->
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹799</div>
+            <a href="product-02-lipoil&gloss-hazelnut.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">BEST SELLER</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/bullet-lipstick/matte-lipstick/product-52-darklady/lipstick-52-2.jpg"
+                 alt="Matte Lipstick - 52 Dark Lady"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Matte Lipstick - 52 Dark Lady</h3>
+          <p class="text-xs text-gray-600 mt-1">Rich Pigment • Lightweight</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">5.0</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹449</div>
+            <a href="product-52-matte-darklady.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">BEST SELLER</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/bullet-lipstick/glossy-lipstic/product-90-fantasy/lipstick-90-2.jpg"
+                 alt="Gloss Lipstick - 90 Fantasy"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Gloss Lipstick - 90 Fantasy</h3>
+          <p class="text-xs text-gray-600 mt-1">Glossy Finish • Rich Pigment</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.9</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹449</div>
+            <a href="product-90-glossy-fantasy.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">TRENDING</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/liquid-lipstick/product-73-liquid-glidedgoddess/liquid-lipstick-73-1.jpg"
+                 alt="Liquid Lipstick - 73 Glided Goddess"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Liquid Lipstick - 73 Glided Goddess</h3>
+          <p class="text-xs text-gray-600 mt-1">Waterproof • 24+ Hours</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.8</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹399</div>
+            <a href="product-73-liquid-glidedgoddess.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">TRENDING</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/premium-lipstick/product-55-premium-temptation/temptation-55-1.jpeg"
+                 alt="Premium Lipstick - 55 Temptation"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Premium Lipstick - 55 Temptation</h3>
+          <p class="text-xs text-gray-600 mt-1">Glossy • Rich Pigment</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.9</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹399</div>
+            <a href="product-55-premium-temptation.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">NEW LAUNCH</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/vintage-lipstick/product-64-vintage-perfectpleasure/vintage-64-perfectpleasure-1.jpeg"
+                 alt="Vintage Lipstick - 64 Perfect Pleasure"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Vintage Lipstick - 64 Perfect Pleasure</h3>
+          <p class="text-xs text-gray-600 mt-1">Matte • Long-Lasting</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.9</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹449</div>
+            <a href="vintage-lipstick.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">BEST SELLER</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/lipliners/nudeme-08/POST-2.jpg"
+                 alt="Lip Liner - 08 Nudeme"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Lip Liner - 08 Nudeme</h3>
+          <p class="text-xs text-gray-600 mt-1">Creamy • Waterproof</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">5.0</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹449</div>
+            <a href="product-08-lipliner-nudeme.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="relative bg-white border-2 border-black overflow-hidden group">
+        <div class="absolute z-30 pointer-events-none">
+          <span class="bg-black text-white text-xs font-bold px-4 py-1.5 tracking-wider uppercase shadow-lg">BEST SELLER</span>
+        </div>
+        <div class="aspect-square relative">
+          <div class="pt-12 px-4 pb-4">
+            <img src="img/lipoil&gloss/product-01-lipoil&gloss-phlipgloss/lipoil&gloss-01-phlipgloss-2.jpg"
+                 alt="Lip Glaze - 04 pH Lip Gloss"
+                 class="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-sm leading-tight line-clamp-2">Lip Glaze - 04 pH Lip Gloss</h3>
+          <p class="text-xs text-gray-600 mt-1">High Shine • Hydrating</p>
+          <div class="flex items-center gap-1 mt-2">
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+            <span class="text-xs font-medium text-gray-700">4.9</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-3">
+            <div class="font-black text-lg whitespace-nowrap">₹449</div>
+            <a href="product-01-lipoil&gloss-phlipgloss.html" class="flex-shrink-0">
+              <button class="border-2 border-black px-4 py-2 text-xs font-bold hover:bg-black hover:text-white transition whitespace-nowrap">
+                BUY NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  <!-- COMBOS & KITS -->
+  <section class="py-20 border-b border-black bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+        <h2 class="text-3xl font-bold">COMBOS & KITS</h2>
+        <a href="combos-kits.html" class="mt-4 md:mt-0 underline font-semibold hover:no-underline">View All →</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- combo - 1 -->
+        <article class="group overflow-hidden border border-black bg-white">
+          <div class="aspect-square overflow-hidden">
+            <img src="img/combos&kits/holidaylipkit/holidaylipkit-1.jpeg" alt="Matte Lipstick" class="w-full h-full object-cover zoom-hover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold">Holiday Lipkit</h3>
+            <p class="text-sm text-gray-600">Combo Pack</p>
+            <div class="mt-3 flex justify-between items-center">
+              <span class="font-bold">₹800</span>
+              <a href="product-holiday-lipkit.html" class="group text-center font-semibold">
+                <button class="border border-black px-2 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">BUY NOW</button>
+                </a>
+            </div>
+          </div>
+        </article>
+        <!-- combo - 2 -->
+        <article class="group overflow-hidden border border-black bg-white">
+          <div class="aspect-square overflow-hidden">
+            <img src="img/combos&kits/nudelipkit/nudelipkit-1.jpeg" alt="Hydrating Serum" class="w-full h-full object-cover zoom-hover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold">True Nude Lipkit</h3>
+            <p class="text-sm text-gray-600">Combo Pack</p>
+            <div class="mt-3 flex justify-between items-center">
+              <span class="font-bold">₹900</span>
+              <a href="product-truenude-lipkit.html" class="group text-center font-semibold">
+                <button class="border border-black px-2 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">BUY NOW</button>
+                </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- combo - 3 -->
+        <article class="group overflow-hidden border border-black bg-white">
+          <div class="aspect-square overflow-hidden">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-1.jpeg" alt="Monochrome Palette" class="w-full h-full object-cover zoom-hover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold">Daily Lipkit</h3>
+            <p class="text-sm text-gray-600">Combo Pack</p>
+            <div class="mt-3 flex justify-between items-center">
+              <span class="font-bold">₹859</span>
+              <a href="product-shine-up-girl.html" class="group text-center font-semibold">
+                <button class="border border-black px-2 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">BUY NOW</button>
+                </a>
+            </div>
+          </div>
+
+          <!-- combo - 4 -->
+        </article>
+        <article class="group overflow-hidden border border-black bg-white">
+          <div class="aspect-square overflow-hidden">
+            <img src="img/combos&kits/juicyplumkit/juicyplumkit-1.jpeg" alt="Cleansing Oil" class="w-full h-full object-cover zoom-hover">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold">Juicy Plum Lipkit</h3>
+            <p class="text-sm text-gray-600">Combo Pack</p>
+            <div class="mt-3 flex justify-between items-center">
+              <span class="font-bold">₹600</span>
+              <a href="product-juicy-plum-lipkit.html" class="group text-center font-semibold">
+                <button class="border border-black px-2 py-2 text-sm font-semibold hover:bg-black hover:text-white transition">BUY NOW</button>
+                </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- PROMOTIONAL BANNERS-->
+<section class="overflow-hidden w-full h-full">
+  <div class="relative w-full h-full">
+    <!-- Carousel Track -->
+    <div class="flex transition-transform duration-700 ease-in-out w-full h-full" id="bannerCarousel">
+      
+      <!-- Banner 1 -->
+      <div class="flex-shrink-0 w-full h-full">
+        <img src="img/banner.webp" alt="Banner 1" 
+             class="w-full h-full object-cover block">
+      </div>
+      
+      <!-- Banner 2 -->
+      <div class="flex-shrink-0 w-full h-full">
+        <img src="https://placehold.co/1920x520" alt="Banner 2" 
+             class="w-full h-full object-cover block">
+      </div>
+      
+      <!-- Banner 3 -->
+      <div class="flex-shrink-0 w-full h-full">
+        <img src="https://placehold.co/1920x520" alt="Banner 3" 
+             class="w-full h-full object-cover block">
+      </div>
+    </div>
+
+    <!-- Dots – Bottom Center -->
+    <div class="absolute bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+      <button onclick="goToBanner(0)" class="w-3 h-3 rounded-full bg-white/80 hover:bg-white transition shadow-lg"></button>
+      <button onclick="goToBanner(1)" class="w-3 h-3 rounded-full bg-white/80 hover:bg-white transition shadow-lg"></button>
+      <button onclick="goToBanner(2)" class="w-3 h-3 rounded-full bg-white/80 hover:bg-white transition shadow-lg"></button>
+    </div>
+  </div>
+</section>
+
+<!-- REAL PEOPLE. REAL RESULTS - VIDEOS WITH TRUE AUTOPLAY ON MOBILE -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4 tracking-wider">REAL PEOPLE. REAL RESULTS.</h2>
+    <p class="text-center text-gray-600 mb-12">Videos play automatically with sound</p>
+
+    <div class="overflow-x-auto scrollbar-hide snap-x snap-mandatory -mx-6 px-6 pb-8">
+      <div class="flex gap-8">
+
+        <!-- VIDEO 1 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-4.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- VIDEO 5 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-5.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- VIDEO 6 -->
+        <div class="flex-shrink-0 w-80 snap-center relative">
+          <video class="w-full h-96 object-cover rounded-2xl shadow-2xl autoplay-video"
+                 loop playsinline preload="auto" muted>
+            <source src="videos/video-6.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- WHAT OUR CUSTOMERS SAY – AUTO SCROLL LEFT -->
+<section class="py-20 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-16 tracking-wider">WHAT OUR CUSTOMERS SAY</h2>
+
+    <!-- Infinite Horizontal Scroll (Right → Left) -->
+    <div class="relative">
+      <div class="flex gap-8 animate-scroll-left">
+        
+        <!-- Testimonial 1 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Malhotra" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Priya Malhotra</div>
+              <div class="text-sm text-gray-600">Mumbai</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“The matte lipstick stays all day even after meals! Finally found my perfect red.”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 2 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ananya Singh" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Ananya Singh</div>
+              <div class="text-sm text-gray-600">Delhi</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Obsessed with the Lip Glaze in Hazelnut shade. Non-sticky aur itna glossy!”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 3 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rohan Kapoor" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Rohan Kapoor</div>
+              <div class="text-sm text-gray-600">Bangalore</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Bought the combo kit for my wife — ab wo har din compliment leti hai!”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 4 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Shreya Gupta" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Shreya Gupta</div>
+              <div class="text-sm text-gray-600">Pune</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Vintage lipstick shade Perfect Pleasure is literally perfect. Long-lasting aur no cracking.”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 5 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Neha Verma" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Neha Verma</div>
+              <div class="text-sm text-gray-600">Hyderabad</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Packaging itni classy hai ki gift karne mein bhi sharam nahi aati.”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 6 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Kavya Reddy" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Kavya Reddy</div>
+              <div class="text-sm text-gray-600">Chennai</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Liquid lipstick 100% smudge-proof hai — mask ke saath bhi survive karta hai!”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 7 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Arjun Mehta" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Arjun Mehta</div>
+              <div class="text-sm text-gray-600">Ahmedabad</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Bought for my sister, ab meri mom bhi use kar rahi hain. All-time hit!”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Testimonial 8 -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Tanya Khanna" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Tanya Khanna</div>
+              <div class="text-sm text-gray-600">Jaipur</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“Best decision ever — ab har function mein 7EVEN hi lagati hun.”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Duplicate set for seamless infinite scroll -->
+        <!-- (Yeh repeat kar diya hai taaki scroll kabhi khatam na lage) -->
+        <!-- Testimonial 1 again -->
+        <blockquote class="flex-shrink-0 w-96 border-2 border-black p-8 bg-white shadow-lg">
+          <div class="flex items-center gap-5 mb-5">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Malhotra" class="w-16 h-16 rounded-full object-cover border-2 border-black">
+            <div>
+              <div class="font-bold text-lg">Priya Malhotra</div>
+              <div class="text-sm text-gray-600">Mumbai</div>
+            </div>
+          </div>
+          <p class="text-gray-800 leading-relaxed">“The matte lipstick stays all day even after meals! Finally found my perfect red.”</p>
+          <div class="mt-4 flex text-yellow-500">★★★★★</div>
+        </blockquote>
+
+        <!-- Aur bhi repeat kar sakte ho agar chaho -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- WHY 7EVEN – Icons in Beautiful Circles -->
+<section class="bg-black py-16">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Mobile: 4 + 3 (2 rows) | Desktop/Tablet: 7 in one row -->
+    <div class="grid grid-cols-4 md:grid-cols-7 gap-x-8 gap-y-12 justify-items-center text-white">
+
+      <!-- 1. Clean Ingredients -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="package" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">Clean<br>Ingredients</span>
+      </div>
+
+      <!-- 2. FDA Approved -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="shield" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">FDA<br>Approved</span>
+      </div>
+
+      <!-- 3. 100% Vegan -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="zap" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">100%<br>Vegan</span>
+      </div>
+
+      <!-- 4. Cruelty-Free -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="heart" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">Cruelty-<br>Free</span>
+      </div>
+
+      <!-- 5. Fast Delivery -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="truck" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">Fast<br>Delivery</span>
+      </div>
+
+      <!-- 6. Dermatologically Tested -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="check-circle" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">Dermatologically<br>Tested</span>
+      </div>
+
+      <!-- 7. Loved by Customers -->
+      <div class="flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
+          <i data-feather="star" class="w-8 h-8 text-black"></i>
+        </div>
+        <span class="text-xs md:text-sm font-medium tracking-wider leading-tight">Loved by<br>Customers</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Newsletter Section -->
+<section class="py-20 border-b border-black bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center gap-16">
+      
+      <!-- Left Side: Bigger Image -->
+      <div class="flex-shrink-0">
+        <img src="img/stay_in_the_loop.webp" 
+             alt="Promotional Image" 
+             class="w-[500px] h-[500px] object-cover border border-black rounded-lg shadow-xl">
+      </div>
+      
+      <!-- Right Side: Subscription Content -->
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-5xl font-bold mb-6 text-black">Join the 7EVEN Family!!!</h2>
+        <p class="text-lg text-gray-700 mb-8">
+          Subscribe to get discount of <span class="font-semibold text-black">15%</span> on your First 7EVEN Order! Exclusively for You.
+        </p>
+        
+        <form id="newsletterForm" class="flex flex-col sm:flex-row gap-4 max-w-md md:max-w-lg">
+          <input 
+            type="email" 
+            placeholder="you@example.com" 
+            required 
+            class="flex-1 px-5 py-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
+          >
+          <button 
+            type="submit" 
+            class="bg-black text-white px-8 py-3 font-semibold hover:bg-gray-800 transition"
+          >
+            SUBSCRIBE
+          </button>
+        </form>
+        
+        <p class="mt-4 text-xs text-gray-500">
+          Sign up for fab updates from 7EVEN Cosmetics. Standard rates apply. Read our Terms and Privacy.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+  <!-- Footer Load  -->
+  <div w3-include-html="footer.html"></div>
+
+  <!-- Only One Script (Reusable for all pages) -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Holiday Kit 1 Bullet Lipstick + 1 Liquid Lipstick + 1 Lip Oil + 1 Lip Liner – 7EVEN COSMETICS" />
+  <title>Time to party Kit 1 Lipliner + 1 Liquid Lipstick + Lip Gloss with Plumper – 7EVEN COSMETICS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+<body class="bg-white text-black">
+
+  <div w3-include-html="header.html"></div>
+
+  <main class="pt-28 pb-20 md:pt-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+        <!-- LEFT: IMAGE GALLERY -->
+        <div class="space-y-6">
+          <div class="relative aspect-square bg-white border-4 border-black overflow-hidden shadow-2xl">
+            <img id="mainImage" src="img/combos&kits/partylipkit/partylipkit-1.jpeg" alt="Holiday Kit" class="w-full h-full object-cover transition-all duration-500">
+            <div class="absolute bottom-4 right-4 bg-black text-white px-5 py-2 text-xs font-bold tracking-widest">
+              LIMITED EDITION
+            </div>
+          </div>
+
+          <div class="grid grid-cols-5 gap-4">
+            <img src="img/combos&kits/partylipkit/partylipkit-2.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/partylipkit/partylipkit-3.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/partylipkit/partylipkit-4.jpeg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/partylipkit/partylipkit-5.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/partylipkit/partylipkit-6.jpeg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+          </div>
+        </div>
+
+        <!-- RIGHT: BUILD YOUR COMBO -->
+        <div class="space-y-12">
+
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+               Time to party Lip Kit
+            </h1>
+            <p class="text-2xl mt-4 text-gray-700 font-medium">
+              1 Lipliner + 1 Liquid Lipstick + 1 Lip Gloss with Plumper
+            </p>
+          </div>
+
+          <div class="flex items-baseline gap-6">
+            <span class="text-4xl md:text-5xl font-black">₹499</span>
+            <span class="text-2xl text-gray-400 line-through">₹597</span>
+          </div>
+          <p class="text-sm text-gray-600">Inclusive of all taxes • Free Shipping</p>
+
+          <div class="flex items-center gap-3">
+            <div class="flex text-yellow-500 text-lg">★★★★★</div>
+            <span class="font-bold">5.0 out of 5 stars</span>
+            <span class="text-gray-600">| 49 ratings</span>
+          </div>
+
+
+          <!-- <div class="flex items-center gap-3">
+            <i data-feather="alert-triangle" class="w-5 h-5"></i>
+            <span class="font-medium">Only 44 units left</span>
+          </div> -->
+
+          <div class="mt-10 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              Get party-ready in seconds with the Time to Party Kit – your ultimate glam companion for bold nights, fearless color, and all-night confidence.
+            </p>
+          </div>
+
+          <h2 class="text-xl md:text-2xl font-black mt-8">CREATE YOUR COMBO</h2>
+
+          
+          <!-- 1. Liquid Lipstick -->
+          <div class="mt-12">
+            <div class="flex items-center gap-6 mb-6">
+              <div>
+                <p class="text-xs text-gray-600 uppercase tracking-widest">Liquid Lipstick</p>
+                <p class="font-bold text-xl" id="selectedGloss">70 Bollywood Blush</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-3">
+              <div class="swatch bg-[#aa3e3c] selected" data-image="img/liquid-lipstick/liquidlipstick-70-1.jpg" onclick="selectShade('gloss','70 Bollywood Blush',this)"></div>
+              <div class="swatch bg-[#bf3e50]" data-image="img/liquid-lipstick/liquidlipstick-71-2.jpg" onclick="selectShade('gloss','71 Cinematic Coral',this)"></div>
+              <div class="swatch bg-[#aa263c]" data-image="img/liquid-lipstick/liquidlipstick-72-3.jpg" onclick="selectShade('gloss','72 Starlet Saffron',this)"></div>
+              <div class="swatch bg-[#c66c52]" data-image="img/liquid-lipstick/liquidlipstick-73-4.jpg" onclick="selectShade('gloss','73 Glided Goddess',this)"></div>
+              <div class="swatch bg-[#b23b59]" data-image="img/liquid-lipstick/liquidlipstick-74-5.jpg" onclick="selectShade('gloss','74  Glamour of Goa',this)"></div>
+              <div class="swatch bg-[#c52229]" data-image="img/liquid-lipstick/liquidlipstick-75-6.jpg" onclick="selectShade('gloss','75  Divas Desire',this)"></div>
+            </div>
+          </div>
+
+          <!-- 2. Lip Gloss -->
+          <div class="mt-12">
+            <div class="flex items-center gap-6 mb-6">
+              <div>
+                <p class="text-xs text-gray-600 uppercase tracking-widest">Lip Gloss</p>
+                <p class="font-bold text-xl" id="selectedLipstickTime">01 Berry Glaze</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-3">
+              <div class="swatch bg-pink-900 selected" data-image="img/lipoil&gloss/product-01-lipoil&gloss-berryglaze/lipoil&gloss-01-berryglaze-1.jpg" onclick="selectShade('lipstickTime','01 Berry Glaze',this)"></div>
+              <div class="swatch bg-red-800" data-image="img/lipoil&gloss/product-02-lipoil&gloss-hazelnut/lipoil&gloss-02-hazelnut-1.jpg" onclick="selectShade('lipstickTime','02  Hazelnut',this)"></div>
+              <div class="swatch bg-red-600" data-image="img/lipoil&gloss/product-03-lipoil&gloss-blossom/lipoil&gloss-03-blossom-1.jpg" onclick="selectShade('lipstickTime','03 Blossom',this)"></div>
+              <div class="swatch bg-red-500" data-image="img/lipoil&gloss/product-01-lipoil&gloss-phlipgloss/lipoil&gloss-01-phlipgloss-2.jpg" onclick="selectShade('lipstickTime','01 pH Lip Gloss',this)"></div>
+              <div class="swatch bg-[#e5c2da]" data-image="img/lipoil&gloss/product-05-lipoil&gloss-lipplumper/lipoil&gloss-05-lipplumper-2.jpg" onclick="selectShade('lipstickTime','05 Lip Plumper',this)"></div>
+            </div>
+          </div>
+
+          <!-- 3. Lip Liner -->
+          <div class="mt-12">
+            <div class="flex items-center gap-6 mb-6">
+              <div>
+                <p class="text-xs text-gray-600 uppercase tracking-widest">Lip Liner</p>
+                <p class="font-bold text-xl" id="selectedOil">01 Blushberry</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-3">
+              <div class="swatch bg-red-800 selected" data-image="img/lipliners/blushberry-01/POST-1.jpg" onclick="selectShade('oil','01 Blushberry',this)"></div>
+              <div class="swatch bg-red-600" data-image="img/lipliners/cherryblossom-02/POST-1.jpg" onclick="selectShade('oil','02 Cherry Blossom',this)"></div>
+              <div class="swatch bg-orange-400" data-image="img/lipliners/foreplay-03/POST-1.jpg" onclick="selectShade('oil','03 Foreplay',this)"></div>
+              <div class="swatch bg-rose-700" data-image="img/lipliners/frenchkiss-04/POST-1.jpg" onclick="selectShade('oil','04 French Kiss',this)"></div>
+              <div class="swatch bg-pink-950" data-image="img/lipliners/kissme-05/POST-1.jpg" onclick="selectShade('oil','05 Kiss me',this)"></div>
+              <div class="swatch bg-pink-800" data-image="img/lipliners/Naughty06/POST-1.jpg" onclick="selectShade('oil','06 Naughty',this)"></div>
+              <div class="swatch bg-[#d07e65]" data-image="img/lipliners/naughtyplum-07/POST-1.jpg" onclick="selectShade('oil','07 Naughty Plum',this)"></div>
+              <div class="swatch bg-red-800" data-image="img/lipliners/nudeme-08/POST-1.jpg" onclick="selectShade('oil','08 Nudeme',this)"></div>
+              <div class="swatch bg-pink-700" data-image="img/lipliners/pinklips-09/POST-1.jpg" onclick="selectShade('oil','09 Pinklips',this)"></div>
+              <div class="swatch bg-rose-500" data-image="img/lipliners/playberry-10/POST-1.jpg" onclick="selectShade('oil','10 Playberry',this)"></div>
+              <div class="swatch bg-orange-950" data-image="img/lipliners/temptation-11/POST-1.jpg" onclick="selectShade('oil','11 Temptation',this)"></div>
+              <div class="swatch bg-red-800" data-image="img/lipliners/velvet touch-12/POST-1.jpg" onclick="selectShade('oil','12 Velvet Touch',this)"></div>
+            </div>
+          </div>
+
+          <!-- FINAL COMBO -->
+          <div class="mt-16 p-8 border-4 border-black rounded-2xl bg-gray-50">
+            <h3 class="text-2xl font-black mb-6">YOUR FINAL COMBO</h3>
+            <div class="space-y-4 text-lg">
+              <p>Liquid Lipstick: <span id="finalGloss" class="font-bold">70 Bollywood Blush</span></p>
+              <p> Lip Gloss: <span id="finalLipstickTime" class="font-bold">01 Berry Glaze</span></p>
+              <p>Lip Liner: <span id="finalOil" class="font-bold">01 Blushberry</span></p>
+            </div>
+          </div>
+
+          <button id="addToCartBtnTimetoparty" class="w-full bg-black text-white py-7 text-2xl font-bold hover:bg-gray-800 transition shadow-2xl mt-8 opacity-50 cursor-not-allowed" disabled>
+              SELECT ALL 3 TO ACTIVATE
+            </button>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+              Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+            </button>
+
+            <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+
+              <p class="mb-6">
+                Get party-ready in seconds with the Time to Party Kit – your ultimate glam companion for bold nights, fearless color, and all-night confidence.
+              </p>
+
+              <p class="mb-6">
+                The sharp, ultra-smooth matte lip liner defines your lips with precision, while the highly pigmented matte liquid lipstick delivers intense, long-lasting color that won’t smudge through any celebration. Top it off with the glossy pH-reactive lip gloss for a vibrant, high-shine finish. Wear them together for a striking party pout or individually for customizable glam. The kit includes: 7even HD Magic to Your Lips Gloss pH (4.5gm), 7even Matte Lip Liner (1.4gms), and 7even Girls Night Out Matte Liquid Lipstick (5ml).
+              </p>
+
+              <p class="mb-6">
+                How to use: Apply the lipstick to the center of your upper lip, trace the natural contours, then glide across the bottom lip for a smooth, flawless finish. You’re now ready to flaunt your perfect party look!
+              </p>
+
+              <p class="font-bold">
+                7even Cosmetics • Made in India • Marketed & Imported by Botonika Lifestyles
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

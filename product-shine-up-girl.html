@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Holiday Kit 1 Bullet Lipstick + 1 Liquid Lipstick + 1 Lip Oil + 1 Lip Liner – 7EVEN COSMETICS" />
+  <title>Shine up girl Lip Kit 1 Glossy Lipstick + Lip Liner Pencil – 7EVEN COSMETICS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+<body class="bg-white text-black">
+
+  <div w3-include-html="header.html"></div>
+
+  <main class="pt-28 pb-20 md:pt-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+        <!-- LEFT: IMAGE GALLERY -->
+        <div class="space-y-6">
+          <div class="relative aspect-square bg-white border-4 border-black overflow-hidden shadow-2xl">
+            <img id="mainImage" src="img/combos&kits/shineupgirlkit/shineupgirlkit-1.jpeg" alt="Holiday Kit" class="w-full h-full object-cover transition-all duration-500">
+            <div class="absolute bottom-4 right-4 bg-black text-white px-5 py-2 text-xs font-bold tracking-widest">
+              LIMITED EDITION
+            </div>
+          </div>
+
+          <div class="grid grid-cols-5 gap-4">
+            <img src="img/combos&kits/shineupgirlkit/shineupgirlkit-1.jpeg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/shineupgirlkit/shineupgirlkit-2.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/shineupgirlkit/shineupgirlkit-3.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/shineupgirlkit/shineupgirlkit-4.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/shineupgirlkit/shineupgirlkit-5.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+          </div>
+        </div>
+
+        <!-- RIGHT: BUILD YOUR COMBO -->
+        <div class="space-y-12">
+
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+               Shine up girl Lip Kit
+            </h1>
+            <p class="text-2xl mt-4 text-gray-700 font-medium">
+              1 Glossy Lipstick + Lip Liner Pencil
+            </p>
+          </div>
+
+          <div class="flex items-baseline gap-6">
+            <span class="text-4xl md:text-5xl font-black">₹499</span>
+            <span class="text-2xl text-gray-400 line-through">₹597</span>
+          </div>
+          <p class="text-sm text-gray-600">Inclusive of all taxes • Free Shipping</p>
+
+          <div class="flex items-center gap-3">
+            <div class="flex text-yellow-500 text-lg">★★★★★</div>
+            <span class="font-bold">5.0 out of 5 stars</span>
+            <span class="text-gray-600">| 69 ratings</span>
+          </div>
+
+         
+          <!-- <div class="flex items-center gap-3">
+            <i data-feather="alert-triangle" class="w-5 h-5"></i>
+            <span class="font-medium">Only 44 units left</span>
+          </div> -->
+
+          <div class="mt-10 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              Shine brighter than ever with the Shine Up Girl Kit – a glow-boosting lip duo designed to shape, define, and deliver a juicy, light-reflecting shine every time.
+            </p>
+          </div>
+
+          <h2 class="text-xl md:text-2xl font-black mt-8">CREATE YOUR COMBO</h2>
+
+          <!-- 1.  Glossy Lipstick -->
+          <div class="mt-10">
+            <div class="flex items-center gap-6 mb-6">
+              <div>
+                <p class="text-xs text-gray-600 uppercase tracking-widest"> Glossy Lipstick</p>
+                <p class="font-bold text-xl" id="selectedLiner">90 Fantasy</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-3">
+              <div class="swatch bg-red-900 selected" data-image="img/bullet-lipstick/glossy-lipstic/glossy-1.jpg" onclick="selectShade('liner','90 Fantasy',this)"></div>
+              <div class="swatch bg-pink-800" data-image="img/bullet-lipstick/glossy-lipstic/glossy-2.jpeg" onclick="selectShade('liner','91 Blushing Babe',this)"></div>
+              <div class="swatch bg-red-700" data-image="img/bullet-lipstick/glossy-lipstic/glossy-3.jpg" onclick="selectShade('liner','92 French Kiss',this)"></div>
+            </div>
+          </div>
+
+         
+          <!-- 2. Lip Liner -->
+          <div class="mt-12">
+            <div class="flex items-center gap-6 mb-6">
+              <div>
+                <p class="text-xs text-gray-600 uppercase tracking-widest">Lip Liner</p>
+                <p class="font-bold text-xl" id="selectedOil">01 Blushberry</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-3">
+              <div class="swatch bg-red-800 selected" data-image="img/lipliners/blushberry-01/POST-1.jpg" onclick="selectShade('oil','01 Blushberry',this)"></div>
+              <div class="swatch bg-red-600" data-image="img/lipliners/cherryblossom-02/POST-1.jpg" onclick="selectShade('oil','02 Cherry Blossom',this)"></div>
+              <div class="swatch bg-orange-400" data-image="img/lipliners/foreplay-03/POST-1.jpg" onclick="selectShade('oil','03 Foreplay',this)"></div>
+              <div class="swatch bg-rose-700" data-image="img/lipliners/frenchkiss-04/POST-1.jpg" onclick="selectShade('oil','04 French Kiss',this)"></div>
+              <div class="swatch bg-pink-950" data-image="img/lipliners/kissme-05/POST-1.jpg" onclick="selectShade('oil','05 Kiss me',this)"></div>
+              <div class="swatch bg-pink-800" data-image="img/lipliners/Naughty06/POST-1.jpg" onclick="selectShade('oil','06 Naughty',this)"></div>
+              <div class="swatch bg-[#d07e65]" data-image="img/lipliners/naughtyplum-07/POST-1.jpg" onclick="selectShade('oil','07 Naughty Plum',this)"></div>
+              <div class="swatch bg-red-800" data-image="img/lipliners/nudeme-08/POST-1.jpg" onclick="selectShade('oil','08 Nudeme',this)"></div>
+              <div class="swatch bg-pink-700" data-image="img/lipliners/pinklips-09/POST-1.jpg" onclick="selectShade('oil','09 Pinklips',this)"></div>
+              <div class="swatch bg-rose-500" data-image="img/lipliners/playberry-10/POST-1.jpg" onclick="selectShade('oil','10 Playberry',this)"></div>
+              <div class="swatch bg-orange-950" data-image="img/lipliners/temptation-11/POST-1.jpg" onclick="selectShade('oil','11 Temptation',this)"></div>
+              <div class="swatch bg-red-800" data-image="img/lipliners/velvet touch-12/POST-1.jpg" onclick="selectShade('oil','12 Velvet Touch',this)"></div>
+            </div>
+          </div>
+
+          <!-- FINAL COMBO -->
+          <div class="mt-16 p-8 border-4 border-black rounded-2xl bg-gray-50">
+            <h3 class="text-2xl font-black mb-6">YOUR FINAL COMBO</h3>
+            <div class="space-y-4 text-lg">
+              <p> Glossy Lipstick: <span id="finalLiner" class="font-bold">90 Fantasy</span></p>
+              <p>Lip Liner Pencil: <span id="finalOil" class="font-bold">01 Blushberry</span></p>
+            </div>
+          </div>
+
+          
+
+          <button id="addToCartBtnShineup" class="w-full bg-black text-white py-7 text-2xl font-bold hover:bg-gray-800 transition shadow-2xl mt-8 opacity-50 cursor-not-allowed" disabled>
+            SELECT ALL 2 TO ACTIVATE
+          </button>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+              Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+            </button>
+
+            <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+              
+              <p class="mb-6">
+                Shine brighter than ever with the Shine Up Girl Kit – a glow-boosting lip duo designed to shape, define, and deliver a juicy, light-reflecting shine every time.
+              </p>
+
+              <p class="mb-6">
+                The ultra-smooth matte lip liner sculpts your lips with flawless precision, enhancing their natural contour, while the high-gloss bullet lipstick adds a radiant, glossy finish. Wear them together for fuller, dimensional, ultra-polished lips, or separately for a soft, effortless sheen. The kit includes: 7even HD Crème Glossy Bullet Lipstick (4.5gm) and 7even Matte Lip Liner (1.4gms).
+              </p>
+
+              <p class="mb-6">
+                How to use: Apply the lipstick to the center of your upper lip, follow the natural contours, then glide across the bottom lip for a smooth, flawless finish. Perfectly shaped, glossy lips – ready to flaunt!
+              </p>
+
+              <p class="font-bold">
+                7even Cosmetics • Made in India • Marketed & Imported by Botonika Lifestyles
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

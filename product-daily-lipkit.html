@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Daily Lip Kit – Lip Liner + Matte Liquid Lipstick – 7EVEN COSMETICS" />
+  <title> Daily Lip Kit 1 Lipliner + 1 Matte Liquid Lipstick – 7EVEN COSMETICS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black antialiased">
+
+  <div w3-include-html="header.html"></div>
+
+  <main class="pt-28 pb-20 md:pt-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+        <!-- LEFT: IMAGE GALLERY -->
+        <div class="space-y-6">
+          <div class="relative aspect-square bg-white border-4 border-black overflow-hidden shadow-2xl">
+            <img id="mainImage" src="img/combos&kits/dailylipkit/dailylipkit-1.jpeg" alt="Daily Lip Kit" class="w-full h-full object-cover transition-all duration-500">
+            <div class="absolute bottom-4 right-4 bg-black text-white px-5 py-2 text-xs font-bold tracking-widest">
+              BEST SELLER
+            </div>
+          </div>
+
+          <div class="grid grid-cols-5 gap-4">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-1.jpeg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-2.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-3.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-4.jpeg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+            <img src="img/combos&kits/dailylipkit/dailylipkit-5.jpg" onclick="changeMainImage(this)" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-black hover:opacity-80 transition">
+          </div>
+        </div>
+
+        <!-- RIGHT: PRODUCT INFO + DESCRIPTION -->
+        <div class="space-y-12">
+
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+               Daily Lip Kit
+            </h1>
+            <p class="text-2xl mt-4 text-gray-700 font-medium">
+              1 Lipliner + 1 Matte Liquid Lipstick
+            </p>
+          </div>
+
+           <div class="flex items-baseline gap-6">
+            <span class="text-4xl md:text-5xl font-black">₹499</span>
+            <span class="text-2xl text-gray-400 line-through">₹896</span>
+          </div>
+          <p class="text-sm text-gray-600">Inclusive of all taxes • Free Shipping</p>
+
+          <div class="flex items-center gap-3">
+            <div class="flex text-yellow-500 text-lg">★★★★★</div>
+            <span class="font-bold">5.0 out of 5 stars</span>
+            <span class="text-gray-600">| 59 ratings</span>
+          </div>
+
+          <!-- <div class="flex items-center gap-3">
+            <i data-feather="alert-triangle" class="w-5 h-5"></i>
+            <span class="font-medium">Only 44 units left</span>
+          </div> -->
+
+          <!-- DESCRIPTION -->
+          <div class="mt-10 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              A simple, everyday lip essential for girls who love effortless beauty.
+            </p>
+            <p>
+              The lip liner adds soft definition, while the lightweight matte liquid lipstick gives all-day comfort and color. Perfect for college, work, or casual outings—natural, neat, and long-lasting. Your easy, everyday go-to for a clean, polished, and confident look.
+            </p>
+          </div>
+
+          <!-- PRODUCTS INSIDE THE KIT (PREMIUM VERSION) -->
+            <div class="mt-10">
+              <h3 class="text-2xl font-bold mb-8">What's Inside Your Kit</h3>
+              <div class="space-y-8">
+
+                <div class="flex items-center gap-6 p-5 border-2 border-black rounded-2xl bg-white shadow-lg">
+                  <div class="w-20 h-20 bg-red-800 rounded-xl flex-shrink-0"></div>
+                  <div>
+                    <p class="font-bold text-xl">7EVEN Matte Lip Liner</p>
+                    <p class="text-gray-600">1.4gms • Long-lasting Creamy Matte Finish</p>
+                    <p class="mt-2 text-sm">
+                      <span class="font-bold text-black">Shade:</span> 
+                      <span class="ml-2 px-3 py-1 bg-red-800 text-white rounded-full text-xs font-bold">12 Velvet Touch</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-6 p-5 border-2 border-black rounded-2xl bg-white shadow-lg">
+                  <div class="w-20 h-20 bg-[#aa263c] rounded-xl flex-shrink-0"></div>
+                  <div>
+                    <p class="font-bold text-xl">7EVEN Matte Liquid Lipstick</p>
+                    <p class="text-gray-600">5ml • Creamy & Highly Pigmented</p>
+                    <p class="mt-2 text-sm">
+                      <span class="font-bold text-black">Shade:</span> 
+                      <span class="ml-2 px-3 py-1 bg-[#aa263c] text-white rounded-full text-xs font-bold">72 Starlet Saffron</span>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          <!-- HOW TO USE -->
+          <div class="mt-10">
+            <h3 class="text-2xl font-bold mb-6">How to Use</h3>
+            <ol class="space-y-4 text-gray-700 list-decimal list-inside">
+              <li>Apply 7even Sensual Lips lipstick in the centre of your upper lip and follow the contours of your mouth.</li>
+              <li>Follow the contours of your lips carefully</li>
+              <li>Glide the lipstick across the entire bottom lip for a flawless finish.</li>
+              <li>Now Ready to Flaunt</li>
+            </ol>
+          </div>
+
+          <!-- ADDITIONAL INFORMATION -->
+          <div class="mt-10 pt-10 border-t-2 border-black text-sm space-y-3 text-gray-700">
+            <p><strong>Weight:</strong> 4.8gm</p>
+            <p><strong>Company Name:</strong> 7even Cosmetics</p>
+            <p><strong>Company Address:</strong> Level 1, 6 Johnsonville Road, Wellington, New Zealand</p>
+            <p><strong>Country of Origin:</strong> India</p>
+            <p><strong>Marketed & Imported by:</strong> Botonika Lifestyles</p>
+          </div>
+
+          <!-- ADD TO CART -->
+          <div class="mt-12">
+            <button class="w-full bg-black text-white py-7 text-2xl font-bold hover:bg-gray-800 transition shadow-2xl">
+              ADD TO CART – ₹499
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

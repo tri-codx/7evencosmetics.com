@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="7EVEN Satin HD Cream Matte Lipstick – Shade 59 Britain (Brown)" />
+  <title>Shade 59 Britain – 7EVEN COSMETICS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-black antialiased">
+
+  <div w3-include-html="header.html"></div>
+
+  <div class="pt-20 md:pt-24 lg:pt-5">
+    <section class="py-12 md:py-20 border-b border-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- MAIN GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+
+          <!-- LEFT COLUMN: Image + Product Information (Desktop only) -->
+          <div class="space-y-12 lg:space-y-20">
+
+            <!-- Image Gallery -->
+            <div>
+              <div class="w-full aspect-square border-4 border-black overflow-hidden bg-gray-100 mb-6">
+                <img id="mainImage" src="img/bullet-lipstick/matte-lipstick/matte-2.jpg" alt="7EVEN Matte Lipstick Shade 59 Britain" class="w-full h-full object-cover">
+              </div>
+              <div class="grid grid-cols-5 gap-3">
+                <img src="img/bullet-lipstick/matte-lipstick/product-56-vamp/lipstick-56-1.jpeg" alt="View 1" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/bullet-lipstick/matte-lipstick/product-56-vamp/lipstick-56-2.jpg" alt="View 2" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/bullet-lipstick/matte-lipstick/product-56-vamp/lipstick-56-3.jpg" alt="View 3" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/bullet-lipstick/matte-lipstick/product-56-vamp/lipstick-56-4.jpg" alt="Swatch" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+                <img src="img/bullet-lipstick/matte-lipstick/product-56-vamp/lipstick-56-5.jpeg" alt="On Lips" class="aspect-square object-cover border-2 border-black cursor-pointer hover:border-gray-600 transition" onclick="changeImage(this.src)">
+              </div>
+            </div>
+
+            <!-- PRODUCT INFORMATION - Desktop Only (hidden on mobile) -->
+            <div class="hidden lg:block space-y-6">
+              <h2 class="text-3xl md:text-4xl font-bold mb-8">PRODUCT INFORMATION</h2>
+
+              <!-- Description -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+                  Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+                </button>
+                <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+                  <p class="mb-6">
+                    Endless Temptation Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a cream Matte finish. Infused with Vitamin E, it moisturises your lips while giving a full blast of colour that lasts for up to 12+ hours. This super-creamy Matte lipstick effectively conceals uneven lips.
+                  </p>
+                  <ul class="space-y-3">
+                    <li>• Lightweight lipstick with creamy matte touch</li>
+                    <li>• Stays in place for up to 12+ hours</li>
+                    <li>• Highly pigmented, creamy, contains Vitamin E</li>
+                    <li>• 100% Vegan and Cruelty-Free</li>
+                    <li>• Paraben-free formula</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Benefits -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl benefitBtn">
+                  Benefits <i data-feather="chevron-down" class="w-6 h-6 transition-transform benefitIcon"></i>
+                </button>
+                <div class="benefitContent px-8 pb-8 hidden text-gray-700">
+                  <ul class="space-y-3">
+                    <li>• Long-lasting matte finish (up to 12+ hours)</li>
+                    <li>• Intense, rich pigmentation in one swipe</li>
+                    <li>• Hydrates and nourishes lips with Vitamin E</li>
+                    <li>• Lightweight and comfortable wear</li>
+                    <li>• Smooth application, no patchiness</li>
+                    <li>• Conceals lip imperfections</li>
+                    <li>• Vegan & Cruelty-Free</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Ingredients -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl ingBtn">
+                  Ingredients <i data-feather="chevron-down" class="w-6 h-6 transition-transform ingIcon"></i>
+                </button>
+                <div class="ingContent px-8 pb-8 hidden text-gray-700 text-sm leading-relaxed">
+                  Butylated hydroxytoluene, Tocopherol acetate (Vitamin E), Pigment/pearl, Silica, Carnauba Wax, Candelilla Wax, Ozokerite Wax, Castor Oil, Ceresin Wax, Caprylic Capric Triglyceride, Octyl Palmitate, Olive Oil, PVP/hexadecane copolymer, Perfume
+                </div>
+              </div>
+
+              <!-- How to Use -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl howBtn">
+                  How to Use <i data-feather="chevron-down" class="w-6 h-6 transition-transform howIcon"></i>
+                </button>
+                <div class="howContent px-8 pb-8 hidden text-gray-700">
+                  <ol class="list-decimal list-inside space-y-3">
+                    <li>Apply lipstick in the centre of your upper lip and follow the contours of your mouth.</li>
+                    <li>Follow the contours of your lips carefully.</li>
+                    <li>Glide the lipstick across the entire bottom lip for a flawless finish.</li>
+                    <li>Now Ready to Flaunt!</li>
+                  </ol>
+                </div>
+              </div>
+
+              <!-- Additional Information -->
+              <div class="border-2 border-black bg-white">
+                <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl addBtn">
+                  Additional Information <i data-feather="chevron-down" class="w-6 h-6 transition-transform addIcon"></i>
+                </button>
+                <div class="addContent px-8 pb-8 hidden text-gray-700 text-sm space-y-2">
+                  <p><strong>Weight:</strong> 4.8gm</p>
+                  <p><strong>Company Name:</strong> 7EVEN COSMETICS</p>
+                  <p><strong>Company Address:</strong> Level 1, 6 Johnsonville Road, Wellington, New Zealand</p>
+                  <p><strong>Country of Origin:</strong> India</p>
+                  <p><strong>Marketed & Imported by:</strong> Botonika Lifestyles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN / MOBILE MIDDLE: Product Name, Price, Buttons -->
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-3xl md:text-3xl leading-tight">
+                7EVEN Sensual HD Creame Lipstick Matte Finish 56 Vamp | Moisturised Lips | Matte Finish|Creamy texture
+              </h1>
+              <p class="text-xl md:text-2xl mt-2 text-gray-700 font-medium">
+                Shade 56 Vamp • Dark Pink • 4.5g
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="flex text-yellow-500 text-lg">★★★★★</div>
+              <span class="font-bold">5.0 out of 5 stars</span>
+              <span class="text-gray-600">| 1 rating</span>
+            </div>
+
+            <div class="text-4xl md:text-5xl font-bold">₹399</div>
+
+            <div class="text-sm md:text-base space-y-3 text-gray-700 border-b border-gray-300 pb-6">
+              <p>Endless Temptation Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a cream Matte finish. Infused with Vitamin E, it moisturises your lips while giving a full blast of colour that lasts for up to 12+ hours. This super-creamy Matte lipstick effectively conceals uneven lips.</p>
+            </div>
+
+            <div class="space-y-4">
+              <button class="w-full bg-black text-white py-4 text-lg font-bold hover:bg-gray-800 transition">
+                ADD TO CART
+              </button>
+              <button class="w-full border-2 border-black py-4 text-lg font-bold hover:bg-black hover:text-white transition">
+                BUY NOW
+              </button>
+            </div>
+
+            <div class="text-sm space-y-2">
+              <div class="flex justify-between"><span class="font-medium">Brand</span><span>7EVEN</span></div>
+              <div class="flex justify-between"><span class="font-medium">colour</span><span>Dark Pink</span></div>
+              <div class="flex justify-between"><span class="font-medium">Size</span><span>4.5g (Pack of 1)</span></div>
+              <div class="flex justify-between"><span class="font-medium">Finish Type</span><span>Matte</span></div>
+              <div class="flex justify-between"><span class="font-medium">Product Benefits</span><span>Anti-Aging</span></div>
+              <div class="flex justify-between"><span class="font-medium">Speciality</span><span>Cruelty Free, Vegan</span></div>
+              <div class="flex justify-between"><span class="font-medium">Material Type Free</span><span>Paraben Free</span></div>
+              <div class="flex justify-between"><span class="font-medium">Item Form</span><span>Stick</span></div>
+              <div class="flex justify-between"><span class="font-medium">Skin Tone</span><span>All</span></div>
+              <div class="flex justify-between"><span class="font-medium">Item Weight</span><span>4.5 Grams</span></div>
+            </div>
+
+
+            <div class="text-center text-sm text-gray-600 space-y-1 pt-8 border-t border-gray-300">
+              <p>✓ Secure transaction • Returns Policy • Free Shipping Across India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT INFORMATION - Mobile Only (Title/Price ke neeche) -->
+        <div class="mt-16 lg:hidden space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8">PRODUCT INFORMATION</h2>
+
+          <!-- Same 5 sections as desktop (copy-paste from above) -->
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl descBtn">
+              Description <i data-feather="chevron-down" class="w-6 h-6 transition-transform descIcon"></i>
+            </button>
+            <div class="descContent px-8 pb-8 hidden text-gray-700 leading-relaxed">
+              <p class="mb-6">
+                Endless Temptation Lipstick is ideal for everyday use. This lightweight cream Matte lipstick glides on smoothly, leaving your lips with a cream Matte finish. Infused with Vitamin E, it moisturises your lips while giving a full blast of colour that lasts for up to 12+ hours. This super-creamy Matte lipstick effectively conceals uneven lips.
+              </p>
+              <ul class="space-y-3">
+                <li>• Lightweight lipstick with creamy matte touch</li>
+                <li>• Stays in place for up to 12+ hours</li>
+                <li>• Highly pigmented, creamy, contains Vitamin E</li>
+                <li>• 100% Vegan and Cruelty-Free</li>
+                <li>• Paraben-free formula</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl benefitBtn">
+              Benefits <i data-feather="chevron-down" class="w-6 h-6 transition-transform benefitIcon"></i>
+            </button>
+            <div class="benefitContent px-8 pb-8 hidden text-gray-700">
+              <ul class="space-y-3">
+                <li>• Long-lasting matte finish (up to 12+ hours)</li>
+                <li>• Intense, rich pigmentation in one swipe</li>
+                <li>• Hydrates and nourishes lips with Vitamin E</li>
+                <li>• Lightweight and comfortable wear</li>
+                <li>• Smooth application, no patchiness</li>
+                <li>• Conceals lip imperfections</li>
+                <li>• Vegan & Cruelty-Free</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl ingBtn">
+              Ingredients <i data-feather="chevron-down" class="w-6 h-6 transition-transform ingIcon"></i>
+            </button>
+            <div class="ingContent px-8 pb-8 hidden text-gray-700 text-sm leading-relaxed">
+              Butylated hydroxytoluene, Tocopherol acetate (Vitamin E), Pigment/pearl, Silica, Carnauba Wax, Candelilla Wax, Ozokerite Wax, Castor Oil, Ceresin Wax, Caprylic Capric Triglyceride, Octyl Palmitate, Olive Oil, PVP/hexadecane copolymer, Perfume
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl howBtn">
+              How to Use <i data-feather="chevron-down" class="w-6 h-6 transition-transform howIcon"></i>
+            </button>
+            <div class="howContent px-8 pb-8 hidden text-gray-700">
+              <ol class="list-decimal list-inside space-y-3">
+                <li>Apply lipstick in the centre of your upper lip and follow the contours of your mouth.</li>
+                <li>Follow the contours of your lips carefully.</li>
+                <li>Glide the lipstick across the entire bottom lip for a flawless finish.</li>
+                <li>Now Ready to Flaunt!</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="border-2 border-black bg-white">
+            <button class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition font-bold text-xl addBtn">
+              Additional Information <i data-feather="chevron-down" class="w-6 h-6 transition-transform addIcon"></i>
+            </button>
+            <div class="addContent px-8 pb-8 hidden text-gray-700 text-sm space-y-2">
+              <p><strong>Weight:</strong> 4.8gm</p>
+              <p><strong>Company Name:</strong> 7EVEN COSMETICS</p>
+              <p><strong>Company Address:</strong> Level 1, 6 Johnsonville Road, Wellington, New Zealand</p>
+              <p><strong>Country of Origin:</strong> India</p>
+              <p><strong>Marketed & Imported by:</strong> Botonika Lifestyles</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
